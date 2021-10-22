@@ -1,0 +1,9 @@
+create 2 service via "kubectl apply -f..."
+
+minikube addons enable ingress==run the ingress
+
+kubectl apply -f Ingress.yaml
+
+kubectl describe ingress "host-ingress"
+
+the following Ingress routes traffic requested for cowboysysop to service1, whoami to service2
